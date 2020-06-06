@@ -3,8 +3,7 @@
 EXEC_PATH=${1:-/home/$USER}
 COMMAND=${@:2:($#-1)}
 
-docker run -it -p 8888:8888 \
-               --gpus all \
+docker run -it --gpus all \
                -w ${EXEC_PATH} \
                -v /etc/group:/etc/group:ro \
                -v /etc/passwd:/etc/passwd:ro \
