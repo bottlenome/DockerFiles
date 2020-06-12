@@ -8,3 +8,4 @@ RUN pip install deap
 RUN pip install git+https://github.com/bottlenome/mlem
 RUN pip install matplotlib jupyter tensorboard
 RUN pip install skorch
+RUN pip install torchsummary
