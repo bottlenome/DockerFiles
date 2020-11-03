@@ -7,4 +7,5 @@ RUN apt-get update && apt-get install -y \
 RUN pip install deap
 RUN pip install git+https://github.com/bottlenome/mlem
 RUN pip install matplotlib jupyter tensorboard
-RUN pip install skorch
+RUN pip install skorch torchviz
+RUN apt-get update && apt-get install -y graphviz
