@@ -11,4 +11,4 @@ docker run -it --gpus all \
                -v /etc/passwd:/etc/passwd:ro \
                -v /home/$USER/:/home/$USER \
                -v /mnt:/mnt \
-               -u $(id -u $USER):$(id -g $USER) bottlenome/tensorflow:latest ${COMMAND}
+               -u $(id -u $USER):$(id -g $USER) bottlenome/tensorflow13:latest ${COMMAND}

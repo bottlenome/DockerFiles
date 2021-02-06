@@ -5,7 +5,8 @@ COMMAND=${@:2:($#-1)}
 
 docker run -it --gpus all \
                -w ${EXEC_PATH} \
-               --shm-size=2gb \
+               -p 8888:8888 \
+               --shm-size=8gb \
                -v /etc/group:/etc/group:ro \
                -v /etc/passwd:/etc/passwd:ro \
                -v /home/$USER/:/home/$USER \

@@ -7,3 +7,5 @@ RUN apt-get update && apt-get install -y \
 RUN git clone https://github.com/MrGiovanni/UNetPlusPlus.git
 RUN cd UNetPlusPlus/pytorch; pip install git+https://github.com/MIC-DKFZ/batchgenerators.git
 RUN cd UNetPlusPlus/pytorch; pip install -e .
+RUN pip install tensorboard torchio
+RUN pip install notebook
