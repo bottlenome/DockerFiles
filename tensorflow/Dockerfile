@@ -7,3 +7,4 @@ RUN apt-get update && apt-get install -y \
   python3-tk
 
 RUN pip3 install Pillow scikit-image psutil
+RUN pip install prox_tv

@@ -11,4 +11,5 @@ docker run -it --gpus all \
                -v /etc/passwd:/etc/passwd:ro \
                -v /home/$USER/:/home/$USER \
                -v /mnt:/mnt \
+               -v /data:/data \
                -u $(id -u $USER):$(id -g $USER) bottlenome/pytorch:latest ${COMMAND}

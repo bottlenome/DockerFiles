@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:1.5.1-devel-gpu-py3
+FROM tensorflow/tensorflow:2.5.1-devel-gpu-py3
 ENV LANG C.UTF-8
 ENV LANGUAGE en_US:
 

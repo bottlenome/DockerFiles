@@ -10,6 +10,7 @@ docker run -it --gpus all \
                -v /etc/passwd:/etc/passwd:ro \
                -v /home/$USER/:/home/$USER \
                -v /mnt:/mnt \
+               -v /data:/data \
                -e nnUNet_raw_data_base=/home/${USER}/git/UNetPlusPlus/pytorch/data \
                -e nnUNet_preprocessed=/home/${USER}/git/UNetPlusPlus/pytorch/preprocessed \
                -e RESULTS_FOLDER=/home/${USER}/git/UNetPlusPlus/pytorch/data/trained/ \
