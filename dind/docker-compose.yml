@@ -1,0 +1,14 @@
+version: '2'
+services:
+    self_hosted_runner:
+        image: dind
+        build: 
+            dockerfile: Dockerfile
+            args:
+                - TOKEN=set_correct_token
+        working_dir: /home/user/actions-runner
+        command: ./run.sh
+        runtime: nvidia
+        user: user
+        volumes:
+            - "/var/run/docker.sock:/var/run/docker.sock"
