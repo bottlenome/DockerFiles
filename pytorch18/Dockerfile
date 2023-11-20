@@ -12,3 +12,6 @@ RUN apt-get update && apt-get install -y graphviz
 RUN pip install git+https://github.com/ildoonet/pytorch-gradual-warmup-lr.git
 RUN pip install einops
 RUN pip install termcolor
+RUN pip install d3rlpy
+RUN pip install Cython
+RUN apt-get update && apt-get install -y build-essential
